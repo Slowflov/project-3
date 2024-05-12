@@ -22,11 +22,11 @@
 					<img src="../project/images/logo/Booki.png" alt="logo-Booki">
 				</a>
 				<ul class="header__list">
-					<a href="">
+					<a>
 						<li class="header__link">Hébergements</li>
 					</a>
 					<a href="">
-						<li class="header__link">Activités</li>
+						<li class="header__link_active">Activités</li>
 					</a>
 				</ul>
 			</div>
@@ -44,19 +44,19 @@
 					<div class="Filters">
 						<h3>Filtres</h3>
 						<div class="filters-wrapper">
-						<a class="Filter__item" href="">
-							<h3>Économique</h3>
-						</a>
-						<a class="Filter__item" href="">
-							<h3>Familial</h3>
-						</a>
-						<a class="Filter__item" href="">
-							<h3>Romantique</h3>
-						</a>
-						<a class="Filter__item" href="">
-							<h3>Nos pépites</h3>
-						</a>
-					    </div>
+							<a class="Filter__item" href="">
+								<h3>Économique</h3>
+							</a>
+							<a class="Filter__item" href="">
+								<h3>Familial</h3>
+							</a>
+							<a class="Filter__item" href="">
+								<h3>Romantique</h3>
+							</a>
+							<a class="Filter__item" href="">
+								<h3>Nos pépites</h3>
+							</a>
+						</div>
 					</div>
 					<div class="filter-info">
 						<i class="fa-solid fa-info" aria-hidden="true"></i>
@@ -68,7 +68,6 @@
 				<section class="hebergements">
 					<h2 class="section-title">Hébergements à Marseille</h2>
 					<div class="hebergements__blocks">
-
 						<a href="#">
 							<div class="hebergements__block">
 								<img src="../project/images/hebergements/fred-kleber.jpg" alt="room-chamber-figma-img">
@@ -86,7 +85,8 @@
 
 						<a href="#">
 							<div class="hebergements__block">
-								<img src="../project/images/hebergements/febrian-zakaria.jpg" alt="room-chamber-figma-img">
+								<img src="../project/images/hebergements/febrian-zakaria.jpg"
+									alt="room-chamber-figma-img">
 								<h3 class="card-title">Hôtel Chez Amina</h3>
 								<p class="card-subtitle">Nuit à partir de 96<b>€</b></p>
 								<div class="hebergements__icons">
@@ -154,13 +154,13 @@
 									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
 									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
 									<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-								</div>								
+								</div>
 							</div>
-							</a>							
-						</div>	
-							<a class="hebergements__link" href="#">
-								<h3>Afficher plus</h3>
-						</a>	
+						</a>
+					</div>
+					<a class="hebergements__link" href="#">
+						<h3>Afficher plus</h3>
+					</a>
 				</section>
 				<section class="populaires">
 					<div class="populaires-title">
@@ -233,58 +233,71 @@
 			</div>
 			<section class="activites">
 				<h2>Activités à Marseille</h2>
-               <div class="activites__blocks">
-                  <div class="activites__block">
-					<a href="">
-						<img src="../project/images/activites/reno-laithienne.jpg" alt="port-img-figma">
-						<h4>Vieux-Port</h4>
-					</a>
-				  </div>
+				<div class="activites__blocks">
+					<div class="activites__block">
+						<a href="">
+							<img src="../project/images/activites/reno-laithienne.jpg" alt="port-img-figma">
+							<h4>Vieux-Port</h4>
+						</a>
+					</div>
 
-				  <div class="activites__block">
-					<a href="#">
-						<img src="../project/images/activites/paul-hermann.jpg" alt="fort-img-figma">
-						<h4>Fort de Pomègues</h4>
-					</a>
-				  </div>
+					<div class="activites__block">
+						<a href="#">
+							<img src="../project/images/activites/paul-hermann.jpg" alt="fort-img-figma">
+							<h4>Fort de Pomègues</h4>
+						</a>
+					</div>
 
-				  <div class="activites__block">
-					<a href="#">
-						<img src="../project/images/activites/kilyan-sockalingum.jpg" alt="parc-calanques-img-figma">
-						<h4>Parc national des Calanques</h4>
-					</a>
-				  </div>
+					<div class="activites__block">
+						<a href="#">
+							<img src="../project/images/activites/kilyan-sockalingum.jpg"
+								alt="parc-calanques-img-figma">
+							<h4>Parc national des Calanques</h4>
+						</a>
+					</div>
 
-				  <div class="activites__block">
-					<a href="#">
-						<img src="../project/images/activites/florian-wehde.jpg" alt="notre-dame-img-figma">
-						<h4>Notre-Dame-de-la-Garde</h4>
-					</a>
-				  </div>
+					<div class="activites__block">
+						<a href="#">
+							<img src="../project/images/activites/florian-wehde.jpg" alt="notre-dame-img-figma">
+							<h4>Notre-Dame-de-la-Garde</h4>
+						</a>
+					</div>
 
-			   </div>
+				</div>
 			</section>
 		</main>
 		<footer class="footer">
-         <nav class="footer__nav">
-			<ul class="footer__list">
-				<li class="footer__item_active">À propos</li>
-				<a href=""><li>Fonctionnement du site</li></a>
-				<a href=""><li>Conditions générales </li></a>
-				<a href=""><li>Données et confidentialité</li></a>
-			</ul>
+			<nav class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__item_active">À propos</li>
+					<a href="">
+						<li>Fonctionnement du site</li>
+					</a>
+					<a href="">
+						<li>Conditions générales </li>
+					</a>
+					<a href="">
+						<li>Données et confidentialité</li>
+					</a>
+				</ul>
 
-			<ul class="footer__list">
-				<li class="footer__item_active">Nos hébergements</li>
-				<a href=""><li>Charte qualité</li></a>
-				<a href=""><li>Proposer votre hôtel</li></a>
-			</ul>
+				<ul class="footer__list">
+					<li class="footer__item_active">Nos hébergements</li>
+					<a href="">
+						<li>Charte qualité</li>
+					</a>
+					<a href="">
+						<li>Proposer votre hôtel</li>
+					</a>
+				</ul>
 
-			<ul class="footer__list">
-				<li class="footer__item_active">Centre d’aide</li>
-				<a href=""><li>Nous contacter</li></a>
-			</ul>
-		 </nav>
+				<ul class="footer__list">
+					<li class="footer__item_active">Centre d’aide</li>
+					<a href="">
+						<li>Nous contacter</li>
+					</a>
+				</ul>
+			</nav>
 		</footer>
 	</div>
 </body>
