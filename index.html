@@ -21,16 +21,13 @@
 				<a class="header__logo" href="#">
 					<img src="../project/images/logo/Booki.png" alt="logo-Booki">
 				</a>
-				<ul class="header__list">
-					<a>
-						<li class="header__link">Hébergements</li>
-					</a>
-					<a href="">
-						<li class="header__link_active">Activités</li>
-					</a>
-				</ul>
+					<nav class="header__list">
+						<a href="#" class="header__link">Hébergements</a>
+						<a href="#" class="header__link">Activités</a>
+					</nav>
 			</div>
 		</header>
+
 		<main>
 			<div class="Rechercher-and-Filters">
 				<section class="Resercher">
@@ -40,20 +37,25 @@
 						<span class="Resercher__icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
 						<input class="Resercher__input" type="text" placeholder="Marseille, France">
 						<button class="Resercher__btn" type="submit">Rechercher</button>
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.7688 14.6976L13.4582 11.3876C13.3088 11.2382 13.1062 11.1552 12.8937 11.1552H12.3525C13.2689 9.9832 13.8135 8.50913 13.8135 6.90558C13.8135 3.09091 10.7221 0 6.90676 0C3.09144 0 0 3.09091 0 6.90558C0 10.7202 3.09144 13.8112 6.90676 13.8112C8.51058 13.8112 9.98491 13.2667 11.1571 12.3504V12.8915C11.1571 13.104 11.2401 13.3065 11.3895 13.4559L14.7001 16.7659C15.0122 17.078 15.517 17.078 15.8258 16.7659L16.7655 15.8264C17.0776 15.5143 17.0776 15.0097 16.7688 14.6976ZM6.90676 11.1552C4.55912 11.1552 2.65644 9.25613 2.65644 6.90558C2.65644 4.55834 4.5558 2.65599 6.90676 2.65599C9.25439 2.65599 11.1571 4.55502 11.1571 6.90558C11.1571 9.25281 9.25771 11.1552 6.90676 11.1552Z"
+								fill="white"></path>
+						</svg>
 					</form>
 					<div class="Filters">
 						<h3>Filtres</h3>
 						<div class="filters-wrapper">
-							<a class="Filter__item" href="">
+							<a class="Filter__item" href="#">
 								<h3>Économique</h3>
 							</a>
-							<a class="Filter__item" href="">
+							<a class="Filter__item" href="#">
 								<h3>Familial</h3>
 							</a>
-							<a class="Filter__item" href="">
+							<a class="Filter__item" href="#">
 								<h3>Romantique</h3>
 							</a>
-							<a class="Filter__item" href="">
+							<a class="Filter__item" href="#">
 								<h3>Nos pépites</h3>
 							</a>
 						</div>
@@ -67,10 +69,11 @@
 			<div class="hebergements-and-populaires">
 				<section class="hebergements">
 					<h2 class="section-title">Hébergements à Marseille</h2>
-					<div class="hebergements__blocks">
-						<a href="#">
-							<div class="hebergements__block">
-								<img src="../project/images/hebergements/fred-kleber.jpg" alt="room-chamber-figma-img">
+					<div class="hebergements__inner">
+						<div class="hebergements__block">
+							<a href="#"></a>
+							<img src="../project/images/hebergements/fred-kleber.jpg" alt="room-chamber-figma-img">
+							<div class="hebergements-content">
 								<h3 class="card-title">Hôtel du port</h3>
 								<p class="card-subtitle">Nuit à partir de 52<b>€</b></p>
 								<div class="hebergements__icons">
@@ -81,82 +84,95 @@
 									<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
 								</div>
 							</div>
-						</a>
+							</a>
+						</div>
 
-						<a href="#">
-							<div class="hebergements__block">
+						<div class="hebergements__block">
+							<a href="#">
 								<img src="../project/images/hebergements/febrian-zakaria.jpg"
 									alt="room-chamber-figma-img">
-								<h3 class="card-title">Hôtel Chez Amina</h3>
-								<p class="card-subtitle">Nuit à partir de 96<b>€</b></p>
-								<div class="hebergements__icons">
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+								<div class="hebergements-content">
+									<h3 class="card-title">Hôtel Chez Amina</h3>
+									<p class="card-subtitle">Nuit à partir de 96<b>€</b></p>
+									<div class="hebergements__icons">
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+									</div>
 								</div>
-							</div>
-						</a>
+							</a>
+						</div>
 
-						<a href="#">
-							<div class="hebergements__block">
+						<div class="hebergements__block">
+							<a href="#">
 								<img src="../project/images/hebergements/reisetopia.jpg" alt="room-chamber-figma-img">
-								<h3 class="card-title">Hôtel Les mouettes</h3>
-								<p class="card-subtitle">Nuit à partir de 76<b>€</b></p>
-								<div class="hebergements__icons">
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+								<div class="hebergements-content">
+									<h3 class="card-title">Hôtel Les mouettes</h3>
+									<p class="card-subtitle">Nuit à partir de 76<b>€</b></p>
+									<div class="hebergements__icons">
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+									</div>
 								</div>
-							</div>
-						</a>
-						<a href="#">
-							<div class="hebergements__block">
+							</a>
+						</div>
+					</div>
+					<div class="hebergements__inner">
+						<div class="hebergements__block">
+							<a href="#">
 								<img src="../project/images/hebergements/annie-spratt.jpg" alt="room-chamber-figma-img">
-								<h3 class="card-title">Hôtel de la mer</h3>
-								<p class="card-subtitle">Nuit à partir de 46<b>€</b></p>
-								<div class="hebergements__icons">
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+								<div class="hebergements-content">
+									<h3 class="card-title">Hôtel de la mer</h3>
+									<p class="card-subtitle">Nuit à partir de 46<b>€</b></p>
+									<div class="hebergements__icons">
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+									</div>
 								</div>
-							</div>
-						</a>
+							</a>
+						</div>
 
-						<a href="#">
-							<div class="hebergements__block">
+						<div class="hebergements__block">
+							<a href="#">
 								<img src="../project/images/hebergements/marcus-loke.jpg" alt="room-chamber-figma-img">
-								<h3 class="card-title">Auberge La Canebière</h3>
-								<p class="card-subtitle">Nuit à partir de 25<b>€</b></p>
-								<div class="hebergements__icons">
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+								<div class="hebergements-content">
+									<h3 class="card-title">Auberge La Canebière</h3>
+									<p class="card-subtitle">Nuit à partir de 25<b>€</b></p>
+									<div class="hebergements__icons">
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+									</div>
 								</div>
-							</div>
-						</a>
+							</a>
+						</div>
 
-						<a href="#">
-							<div class="hebergements__block">
+						<div class="hebergements__block">
+							<a href="#">
 								<img src="../project/images/hebergements/nicate-lee.jpg" alt="room-chamber-figma-img">
-								<h3 class="card-title">Auberge Le Panier</h3>
-								<p class="card-subtitle">Nuit à partir de 23<b>€</b></p>
-								<div class="hebergements__icons">
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-									<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+								<div class="hebergements-content">
+									<h3 class="card-title">Auberge Le Panier</h3>
+									<p class="card-subtitle">Nuit à partir de 23<b>€</b></p>
+									<div class="hebergements__icons">
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+										<i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+									</div>
 								</div>
-							</div>
-						</a>
+							</a>
+						</div>
 					</div>
 					<a class="hebergements__link" href="#">
 						<h3>Afficher plus</h3>
