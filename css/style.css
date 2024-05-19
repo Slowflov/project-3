@@ -134,20 +134,36 @@ li {
 }
 
 .Resercher__input {
-    background-color: inherit;
-    border: 1px solid var(--main-bg-color);
-    border-radius: 15px;
+    padding: 14px 0px 14px 55px;
+    border-top: 1px solid rgba(242, 242, 242, 1);
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(242, 242, 242, 1);
+    background: var(--main-white-color);
     outline: none;
-    padding: 14px 24px;
-    padding-left: 74px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21.13px;
+}
+
+.Resercher-mobile {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    height: 49px;
+    padding: 19px 14px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid var(--blue, #0065FC);
+    background: var(--blue, #0065FC);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--main-white-color);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .Resercher__btn {
     position: absolute;
-    display: block;
+    display: inline-block;
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
     padding: 14px 16px;
@@ -155,8 +171,7 @@ li {
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
-    right: 0;
-    top: 1%;
+    left: 248px;
     color: var(--main-bg-color);
     cursor: pointer;
     transition: 3s;
@@ -564,7 +579,7 @@ li {
     /* ... */
     .main-container {
         padding: 0;
-        margin-left: 33px;
+        margin-left: 20px;
     }
    /* header */
    .header {
@@ -583,7 +598,7 @@ li {
     justify-content: center;
     text-align: center;
     gap: 0;
-    /* margin-left: 15px; */
+    font-size: 18px;
 }
 
 .header__link {
@@ -605,23 +620,30 @@ li {
     }
 
     .Resercher__form {
-        width: 335px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: none;
+        width: 93%;
+
+    }
+
+    .Resercher-mobile {
+        display: inline-flex;
     }
 
     .Resercher__input {
-        font-size: 16px;
+        font-size: 15px;
+        flex-grow: 1;
+        width: 79%;
+        padding-right: 0;
+
+        max-width: none;
+        min-width: 130px;
     }
 
     .Resercher__btn {
-        font-size: 0px;
-        right: 48px;
-        width: 50px;
-        color: #000000;
-    }
-    svg {
-        position: absolute;
-        left: 254px;
-        bottom: 18px;
+        display: none;
     }
     /* Filters */
     .Filters {
@@ -658,10 +680,15 @@ li {
     /* populaires */
     .populaires {
         margin: 0 auto 30px auto;
+        background-color: var(--main-bg-color);
     }
 
     .section-title {
         margin: 10px 0 0 10px;
+    }
+
+    .populaires-title {
+        margin-bottom: -15px;
     }
 
     .fa-chart-line {
@@ -671,7 +698,6 @@ li {
     .hebergements-and-populaires section {
         padding: 5px;
     }
-
     .populaires-cards {
         display: inline-block;
         flex-direction: column;
@@ -688,8 +714,13 @@ li {
     }
 
     /* hebergements */
+    .hebergements-and-populaires .hebergements {
+        background-color: transparent;
+    }
+
     .hebergements {
         order: 1;
+        background-color: none;
     }
 
     .hebergements__blocks {
@@ -699,15 +730,17 @@ li {
         margin-top: 34px;
     }
 
-    
-
     .hebergements__block {
         width: 99.7%;
         margin-bottom: 30px;
     }
+    .hebergements__block:last-child {
+        margin-bottom: 15px;
+    }
 
     .hebergements__inner {
         display: block;
+        margin-bottom: 0;
     }
 
     .hebergements__block img {
@@ -717,7 +750,7 @@ li {
     }
 
     .hebergements__link h3 {
-        margin: 0 0 10px 10px;
+
     }
 
     /* activites */
